@@ -52,11 +52,41 @@ map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
 " hightlight
  syntax on
 
+" autoindent
+set autoindent
+
 " nerdtree plugin
 filetype plugin indent on
+
+" Spaces & Tabs {{{
+set tabstop=2       " number of visual spaces per TAB
+set softtabstop=2   " number of spaces in tab when editing
+set shiftwidth=2    " number of spaces to use for autoindent
+set expandtab       " tabs are space
+set autoindent
+set copyindent      " copy indent from the previous line
+" }}} Spaces & Tabs
+
+" Folding {{{
+set foldenable
+set foldlevelstart=10  " default folding level when buffer is opened
+set foldnestmax=10     " maximum nested fold
+set foldmethod=syntax  " fold based on indentation
+" }}} Folding
  
- " line number
-set number
+" UI Config {{{
+set hidden
+set number                   " show line number
+set showcmd                  " show command in bottom bar
+set wildmenu                 " visual autocomplete for command menu
+set showmatch                " highlight matching brace
+set laststatus=2             " window will always have a status line
+set nobackup
+set noswapfile
+" }}} UI Config
+
+" insert blank line before current line without leaving insert mode
+imap <leader>o <c-o><s-o>
 
 " esc in insert mode
 inoremap jk <esc>
