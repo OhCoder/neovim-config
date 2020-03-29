@@ -10,6 +10,17 @@
     "graphql"
   ],
   "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "initializationOptions": {
+        "elmPath": "elm",
+        "elmFormatPath": "elm-format",
+        "elmTestPath": "elm-test",
+        "elmAnalyseTrigger": "change"
+      }
+    },
     "purescript": {
        "command": "purescript-language-server",
        "args": ["--stdio"],
