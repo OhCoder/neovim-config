@@ -11,6 +11,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 
+" LightLine
+Plug 'itchyny/lightline.vim'
+
 " EasyAlign
 Plug 'junegunn/vim-easy-align'
 
