@@ -14,6 +14,15 @@ Plug 'scrooloose/nerdcommenter'
 " LightLine
 Plug 'itchyny/lightline.vim'
 
+" nnn
+Plug 'mcchrish/nnn.vim'
+
+" vim-css-color
+Plug 'ap/vim-css-color'
+
+" vifm
+Plug 'vifm/vifm.vim'
+
 " EasyAlign
 Plug 'junegunn/vim-easy-align'
 
