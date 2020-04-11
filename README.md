@@ -11,6 +11,7 @@
 ### Screenshot
 ![menu](./doc/menu.png)
 ![auto-tip](./doc/auto-tip.png)
+![nnn](./doc/nnn.png)
 
 ### Usage
 1. Install [iTerm2](https://www.iterm2.com/downloads.html), [OhMyZsh](https://github.com/ohmyzsh/ohmyzsh#basic-installation) and [powerlevel10k](https://github.com/romkatv/powerlevel10k) (Recommend tools).
