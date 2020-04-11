@@ -41,6 +41,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 " solid language pack for vim
 Plug 'sheerun/vim-polyglot'
 
+Plug 'tpope/vim-surround'
+
 call plug#end()
 
 " NERDTree ignore
@@ -50,6 +52,10 @@ let g:NERDTreeIgnore = ['^node_modules$']
 " ref: https://github.com/preservim/nerdtree#how-can-i-open-a-nerdtree-automatically-when-vim-starts-up-if-no-files-were-specified
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+" nnn config begin
+" Floating window (neovim latest and vim with patch 8.2.191)
+let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
 
 " CtrlP, When invoked without an explicit starting directory, CtrlP will set its local working directory according to this variable
 let g:ctrlp_working_path_mode = 'ra'
