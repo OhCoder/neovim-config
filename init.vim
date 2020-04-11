@@ -64,6 +64,9 @@ set updatetime=100
 " always show signcolumn
 set signcolumn=yes
 
+" set python3 host prog 
+let g:python3_host_prog = '$HOME/.asdf/shims/python3'
+
 " coc config begin
 let g:coc_global_extensions = [
   \ 'coc-snippets',
