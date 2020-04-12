@@ -65,6 +65,12 @@ let g:ctrlp_switch_buffer = 'et'
 " true color
 set termguicolors
 
+" improve scrolling performance when navigating through large results
+set lazyredraw
+
+" ignore case only when the pattern contains no capital letters
+set ignorecase smartcase
+
 " line number
 set number
 
@@ -84,6 +90,9 @@ set signcolumn=yes
 
 " set python3 host prog 
 let g:python3_host_prog = '$HOME/.asdf/shims/python3'
+
+" set far.vim plugin
+let g:far#enable_undo=1
 
 " coc config begin
 let g:coc_global_extensions = [
