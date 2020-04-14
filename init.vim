@@ -13,6 +13,9 @@ Plug 'ryanoasis/vim-devicons'
 " NERDCommenter
 Plug 'scrooloose/nerdcommenter'
 
+" WeChat syntax highlight
+Plug 'chemzqm/wxapp.vim'
+
 " LightLine
 Plug 'itchyny/lightline.vim'
 
@@ -89,6 +92,12 @@ set expandtab
 set updatetime=100
 " always show signcolumn
 set signcolumn=yes
+
+" Alipay mini syntax highlight
+augroup AlipayMini
+  autocmd BufNewFile,BufRead *.acss set syntax=css
+  autocmd BufNewFile,BufRead *.axml set syntax=html
+augroup END
 
 " set python3 host prog 
 let g:python3_host_prog = '$HOME/.asdf/shims/python3'
@@ -223,6 +232,12 @@ set encoding=UTF-8
 
 " set heighlight syntax
 syntax on
+
+" support mouse modify window size
+set mouse=a
+
+" set get current menu from '%:h' to %%
+cnoremap <expr> %% getcmdtype( ) == ':' ? expand('%:h').'/' : '%%'
 
 " turns on detection, plugin and indent at once
 filetype plugin indent on
