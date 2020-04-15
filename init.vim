@@ -46,6 +46,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 " solid language pack for vim
 Plug 'sheerun/vim-polyglot'
 
+" surround
 Plug 'tpope/vim-surround'
 
 call plug#end()
