@@ -239,6 +239,9 @@ set mouse=a
 " set get current menu from '%:h' to %%
 cnoremap <expr> %% getcmdtype( ) == ':' ? expand('%:h').'/' : '%%'
 
+" open netrw
+set nocompatible
+
 " turns on detection, plugin and indent at once
 filetype plugin indent on
 
