@@ -80,6 +80,9 @@ set ignorecase smartcase
 " line number
 set number
 
+" set path based curent directory.
+set path=.
+
 " set indent
 set smarttab
 set cindent
