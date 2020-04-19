@@ -103,6 +103,22 @@ augroup END
 " set python3 host prog 
 let g:python3_host_prog = '$HOME/.asdf/shims/python3'
 
+" set clipboard
+set clipboard+=unnamedplus
+
+" set all number to decimal
+set nrformats=
+
+" for bash shell, set auto-complete menu
+" set wildmode=longest,list
+
+" for zsh, set auto-complete menu 
+set wildmenu
+set wildmode=full
+
+" set history command list
+set history=200
+
 " set far.vim plugin
 let g:far#enable_undo=1
 
