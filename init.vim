@@ -262,9 +262,6 @@ cnoremap <expr> %% getcmdtype( ) == ':' ? expand('%:h').'/' : '%%'
 " open netrw plugin
 set nocompatible
 
-" auto-load matchit plugin
-runtime macros/matchit.vim
-
 " turns on detection, plugin and indent at once
 filetype plugin indent on
 
