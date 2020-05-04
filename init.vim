@@ -262,6 +262,9 @@ cnoremap <expr> %% getcmdtype( ) == ':' ? expand('%:h').'/' : '%%'
 " open netrw plugin
 set nocompatible
 
+" check spell
+set spell
+
 " turns on detection, plugin and indent at once
 filetype plugin indent on
 
