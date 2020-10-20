@@ -54,6 +54,8 @@ call plug#end()
 " NERDTree ignore
 let g:NERDTreeIgnore = ['^node_modules$']
 
+let g:coc_node_path = '/Users/Haskell/.asdf/shims/node'
+
 " NERDTree default open when nvim starts up. 
 " ref: https://github.com/preservim/nerdtree#how-can-i-open-a-nerdtree-automatically-when-vim-starts-up-if-no-files-were-specified
 autocmd StdinReadPre * let s:std_in=1
