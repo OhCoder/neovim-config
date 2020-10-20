@@ -1,7 +1,7 @@
 ### Introduce
 [NeoVim](https://neovim.io) configuration.
 ### Feature
-* Language auto-complete, like JavaScript, TypeScript, Python, Elm, PureScript and Tsx, Jsx type file of the ReactJS.
+* Language auto-complete, like JavaScript, TypeScript, Python, Haskell, Elm, PureScript and Tsx, Jsx type file of the ReactJS.
 * Auto-format on save for JavaScript, TypeScript, CSS, Markdown, GraphQL, Tsx, Jsx type file.
 * Syntax highlight for 140+ languages.
 * Menu management in a fast && beautiful way.
