@@ -54,7 +54,8 @@ call plug#end()
 " NERDTree ignore
 let g:NERDTreeIgnore = ['^node_modules$']
 
-let g:coc_node_path = '/Users/Haskell/.asdf/shims/node'
+" not show signcolumn
+set signcolumn=no
 
 " NERDTree default open when nvim starts up. 
 " ref: https://github.com/preservim/nerdtree#how-can-i-open-a-nerdtree-automatically-when-vim-starts-up-if-no-files-were-specified
@@ -96,8 +97,6 @@ set expandtab
 " config for gitgutter.
 " ref: https://github.com/airblade/vim-gitgutter#getting-started
 set updatetime=100
-" always show signcolumn
-set signcolumn=yes
 
 " Alipay mini syntax highlight
 augroup AlipayMini
@@ -106,7 +105,10 @@ augroup AlipayMini
 augroup END
 
 " set python3 host prog 
-let g:python3_host_prog = '$HOME/.asdf/shims/python3'
+let g:python3_host_prog = '$HOME/.pyenv/shims/python3'
+
+" set python2 host prog 
+let g:python2_host_prog = '$HOME/.pyenv/shims/python2.7'
 
 " set clipboard
 set clipboard+=unnamedplus
@@ -122,7 +124,7 @@ set wildmenu
 set wildmode=full
 
 " set history command list
-set history=200
+set history=100
 
 " set far.vim plugin
 let g:far#enable_undo=1
