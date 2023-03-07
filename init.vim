@@ -62,6 +62,11 @@ set signcolumn=no
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" fixed vim-nerdtree-syntax-highlight plugin error e5248 when nvim upgrade to
+" v0.8.3. And improve lag issues, see: https://github.com/tiagofumo/vim-nerdtree-syntax-highlight#mitigating-lag-issues
+let g:NERDTreeLimitedSyntax = 1
+let g:NERDTreeHighlightCursorline = 0
+
 " nnn config begin
 " Floating window (neovim latest and vim with patch 8.2.191)
 let g:nnn#layout = { 'window': { 'width': 0.9, 'height': 0.6, 'highlight': 'Debug' } }
