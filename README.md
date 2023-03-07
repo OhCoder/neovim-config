@@ -1,6 +1,6 @@
 ### Introduce
 
-[NeoVim](https://neovim.io) configuration.
+[NeoVim](https://neovim.io) configuration(for v0.8.3).
 
 ### Feature
 
